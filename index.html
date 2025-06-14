@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-hollow" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-normal" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pocket-monk" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <h1>Haz click para ver los pokemon</h1>
+
+    <!-- Botones para los Pokémon -->
+    <div id="botones-pokemon">
+    <button class="pokemon-button" onclick="showPokemon('Pikachu')">Pikachu</button>
+    <button class="pokemon-button" onclick="showPokemon('Charizard')">Charizard</button>
+    <button class="pokemon-button" onclick="showPokemon('Eevee')">Eevee</button>
+</div>
+
+    <!-- Contenedor para mostrar la imagen y descripción -->
+    <div id="pokemon-info" >
+        <div id="Pikachu">
+            <img id="Pikachu-image" src="./Imagenes/pikachu.jpg" alt="Imagen de Pikachu">
+            <p id="Pikachu-description">Pikachu es un Pokémon eléctrico muy popular.</p>
+        </div>
+        
+        <div id="Charizard" >
+            <img id="Charizard-image" src="./Imagenes/charizard.png" alt="Imagen de Charizard">
+            <p id="Charizard-description">Charizard es un Pokémon de tipo fuego y volador.</p>
+        </div>
+        
+        <div id="Eevee" >
+            <img id="Eevee-image" src="./Imagenes/eevee.png" alt="Imagen de Eevee">
+            <p id="Eevee-description">Eevee puede evolucionar en varios tipos diferentes.</p>
+        </div>
+        
+    </div>
+<div id="pokemon-info"></div>
+<div id="agregar-pokemon">
+    <input type="text" id="nuevo-enlace" placeholder="Agregar enlace">
+    <input type="text" id="nueva-descripcion" placeholder="Agregar descripción">
+    <input type="text" id="nuevo-nombre" placeholder="agregar nombre">
+    <button onclick="agregarPokemon()">Agregar</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

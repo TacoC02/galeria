@@ -1,0 +1,159 @@
+body {
+    background-image: url("https://fondosanimados.com/wp-content/uploads/2023/03/Pinwheel-Forest_wallpaper-1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+img {
+width: 300px;
+height: 300px;
+}
+
+img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px 10px #ffcb05;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-rotada {
+    transform: rotate(90deg) scale(1.08);
+    transition: transform 0.5s;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pokemon Hollow', sans-serif;
+    color: yellow
+}
+
+p {
+    font-family: 'Pocket Monk', sans-serif;
+    color: white;
+}
+
+#agregar-pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 12px;
+}
+
+#agregar-pokemon input[type="text"] {
+    width: 320px;
+    padding: 12px 18px;
+    border: 3px solid #ffcb05;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: 'Pokemon Solid', sans-serif;
+    margin-bottom: 8px;
+    background: #fffbe7;
+    color: #2a75bb;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(42,117,187,0.08);
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+#agregar-pokemon input[type="text"]:focus {
+    border: 3px solid #2a75bb;
+    box-shadow: 0 0 12px 2px #ffcb05;
+}
+
+#agregar-pokemon button {
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #ffcb05 60%, #2a75bb 100%);
+    color: #2a75bb;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 20px;
+    border: 3px solid #2a75bb;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(42,117,187,0.12);
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+#agregar-pokemon button:hover {
+    background: linear-gradient(90deg, #2a75bb 60%, #ffcb05 100%);
+    color: #ffcb05;
+    transform: scale(1.05);
+}
+
+#botones-pokemon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#pokemon-info {
+    text-align: center;
+    color: white;
+    font-family: 'Pocket Monk', sans-serif;
+    margin-top: 20px;
+}
+
+
+.pokemon-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid black;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
+    font-size: 16px;
+    font-family: 'Pokemon Hollow', sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pokemon-button .top {
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pokemon-button .bottom {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pokemon-button .center-circle {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 6px solid black;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: black;
+    font-family: 'Pokemon Hollow', sans-serif;
+    text-align: center;
+    pointer-events: none;
+}
+
+.pokemon-button:active {
+    transform: scale(0.9);
+}
