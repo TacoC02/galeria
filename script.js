@@ -86,10 +86,11 @@ function agregarPokemon() {
         document.getElementById('nueva-descripcion').value = '';
         document.getElementById('nuevo-nombre').value = '';
     } else {
-        alert('completa todos los cuadros para que se pueda mostrar bien el pokemon nuevo 💢');
+        alert('completa todos los cuadros para que se pueda mostrar el pokemon nuevo 💢');
     }
 }
 
 window.onload = function() {
     renderGaleria();
+
 };
